@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from 'gatsby'
+import { SEO } from "../components/seo"
 import HomeLayout from "../components/HomeLayout"
 import InfoCard from "../components/InfoCard"
 import BgDiv from "../components/BgDiv"
@@ -49,3 +50,7 @@ export default function Home() {
     </HomeLayout>
   )
 }
+
+export const Head = () => (
+  <SEO />
+)
