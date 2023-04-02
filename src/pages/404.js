@@ -22,7 +22,7 @@ export default function NotFound() {
             <h1 className="font-semibold text-8xl md:text-9xl text-gray-700">404</h1>
             <div className="font-medium text-2xl text-gray-500 mt-6">Pagina non trovata</div>
           </div>
-          <img src={'/404.svg'} alt="Hero" className='h-56 xl:h-64 hidden lg:flex' />
+          <img src={'/404.svg'} alt="Not Found" className='h-56 xl:h-64 hidden lg:flex' />
         </ContentDiv>
       </BgDiv>
       <BgDiv className="pt-8">

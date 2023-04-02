@@ -9,13 +9,13 @@ import ContentDiv from "../components/ContentDiv"
 export default function Home() {
   return (
     <HomeLayout>
-      <BgDiv className="pt-6 pb-0">
+      <BgDiv className="pt-10 pb-0">
         <ContentDiv>
           <Link to='/'>
               <img src={'/logo.png'} alt="Dattero logo" className='h-12' />
           </Link>
-          <div className='h-1 w-32 bg-primary rounded-r-full' />
-          <div className='h-12 w-1 bg-primary rounded-b-full' />
+          {/* <div className='h-1 w-32 bg-primary rounded-r-full' />
+          <div className='h-12 w-1 bg-primary rounded-b-full' /> */}
         </ContentDiv>
       </BgDiv>
       <BgDiv className="pt-8 pb-24">
@@ -28,17 +28,17 @@ export default function Home() {
         </ContentDiv>
       </BgDiv>
       <BgDiv className="bg-neutral-200/50">
-        <ContentDiv className="grid grid-cols-1 md:grid-cols-2 gap-10 md:px-6 lg:px-12">
-          <InfoCard>Hai un'idea che può aiutare i musulmani in Italia a risolvere un problema comune?<br/><br/>Saremo felici di aiutarti a realizzare la tua idea fornendo le capacità tecniche richieste.</InfoCard>
-          <InfoCard>Hai esperienza con lo sviluppo web o mobile?<br/><br/>Vuoi mettere a disposizione le tue capacità al servizio della nostra comunità?<br/><br/>Unisciti ai nostri team!</InfoCard>
-          <InfoCard>Vuoi imparare a sviluppare su progetti reali e allo stesso tempo contribuire nella realizzazione di soluzioni per la nostra comunità?<br/><br/>Unisciti a noi per imparare affianco a persone esperte e guadagnare hasanat.</InfoCard>
-          <InfoCard>Ti piace l'idea di Dattero e vuoi contribuire con altre tue skills?<br/><br/>Ogni contributo è ben accolto e ricompensato!</InfoCard>
+        <ContentDiv className="flex flex-col gap-24">
+          <InfoCard title="ti aiutiamo con la tua idea">Hai un'idea che può aiutare i musulmani in Italia a risolvere un problema comune?<br/><br/>Mandaci la tua idea e saremo felici di aiutarti a realizzarla fornendo le capacità tecniche richieste.</InfoCard>
+          <InfoCard title="impara su progetti reali" reverse>Sei nuovo nel mondo tech e vuoi imparare a sviluppare su progetti reali e allo stesso tempo aiutare la nostra comunità?<br/><br/>Unisciti a noi per imparare affianco a persone esperte che ti seguiranno nel tuo percorso.</InfoCard>
+          <InfoCard title="contribuisci con la tua esperienza">Hai esperienza con lo sviluppo web o mobile?<br/><br/>Vuoi mettere a disposizione le tue capacità al servizio della nostra comunità?<br/><br/>Unisciti ai nostri team!</InfoCard>
+          <InfoCard title="qualsiasi skill può essere utile" reverse>Ti piace l'idea di Dattero e vuoi contribuire con altre tue skills?<br/><br/>Ogni contributo è ben accolto, saremo felici di averti con noi!</InfoCard>
         </ContentDiv>
       </BgDiv>
       <BgDiv className="pt-8 pb-12 bg-gray-700">
         <ContentDiv className="flex flex-col md:flex-row gap-2 md:gap-4 justify-center content-center">
           <a href="https://t.me/iAbou/" target="_blank" rel="noreferrer" className="text-medium text-neutral-50 flex items-center gap-4 max-w-xs hover:bg-white/10 py-4 px-6 rounded-lg transition duration-300">
-            <img src={'/telegram.svg'} alt="Instagram Logo" className='h-12' />
+            <img src={'/telegram.svg'} alt="Telegram Logo" className='h-12' />
             <div>Contattaci su Telegram</div>
           </a>
           <a href="https://instagram.com/dattero_community/" target="_blank" rel="noreferrer" className="text-medium text-neutral-50 flex items-center gap-4 max-w-xs hover:bg-white/10 py-4 px-6 rounded-lg transition duration-300">
